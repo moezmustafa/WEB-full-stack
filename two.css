@@ -1,0 +1,49 @@
+
+
+
+body{
+    height : 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    height: 300px;
+    width: 300px;
+    background-color: #df1717;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40px;
+    
+}
+
+.two {
+    height: 300px;
+    width: 300px;
+    background-color: #814d4d;
+    position: relative;
+
+    z-index: -1;
+    transition: 0.5s;
+   
+
+    
+}   
+
+
+body:hover .two{
+    transform : translate(0px,170px);
+    transition: 0.5s;
+    
+    z-index: -1;
+   
+
+}
+
+body:hover .one {
+    transform : translate(0px,-170px);
+    transition: 0.5s;
+    z-index: -1;
+}
